@@ -11,7 +11,7 @@ const Chat = () => {
     baseURL: "https://api.openai.com/v1",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
     },
   });
 
@@ -51,12 +51,12 @@ const Chat = () => {
         id="page-content"
       >
         <div className="padding polaroid">
-          <div className="row container d-flex justify-content-center">
+          <div className="container row d-flex justify-content-center">
             <div className="offset-md-3 col-md-6">
               <div className="card card-bordered">
                 <div className="card-header">
                   <h2 className="card-title">
-                    <strong>Chat using ChatGPT API</strong>
+                    <strong>Chat en utilisant ChatGPT API</strong>
                   </h2>
                 </div>
 
@@ -104,7 +104,7 @@ const Chat = () => {
                     <input
                       className="publisher-input"
                       type="text"
-                      placeholder="Ask Me Anything"
+                      placeholder="Poses moi une question"
                       value={newQuestion}
                       disabled
                     />
@@ -128,7 +128,7 @@ const Chat = () => {
                     <input
                       className="publisher-input"
                       type="text"
-                      placeholder="Ask Me Anything"
+                      placeholder="Poses moi une question"
                       value={newQuestion}
                       onChange={(e) => {
                         setNewQuestion(e.target.value);
@@ -141,7 +141,7 @@ const Chat = () => {
                       onClick={(e) => {
                         handleSubmit(e);
                       }}
-                      className="btn  btn-secondary"
+                      className="btn btn-secondary"
                     >
                       <i className="fa fa-paper-plane"></i>
                     </button>
